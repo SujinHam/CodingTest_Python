@@ -1,8 +1,9 @@
 def solution(strArr):
     answer = []
-    for i in range(len(strArr)):
+    
+    for i, elem in enumerate(strArr):
         if i%2==1:
-            answer.append(strArr[i].upper())
+            answer.append(elem.upper())
         else:
-            answer.append(strArr[i].lower())
+            answer.append(elem.lower())
     return answer
